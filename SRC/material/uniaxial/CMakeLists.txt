@@ -178,6 +178,7 @@ target_sources(OPS_Material
       ViscoelasticGap.cpp
       ViscousDamper.cpp
       ViscousMaterial.cpp
+      VRMMaterial.cpp
       WrapperUniaxialMaterial.cpp
       pyUCLA.cpp
       SMAMaterial.cpp
@@ -295,6 +296,7 @@ target_sources(OPS_Material
       ViscoelasticGap.h
       ViscousDamper.h
       ViscousMaterial.h
+      VRMMaterial.h      
       WrapperUniaxialMaterial.h
       pyUCLA.h
       CoulombDamperMaterial.h

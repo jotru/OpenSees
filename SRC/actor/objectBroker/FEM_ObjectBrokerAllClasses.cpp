@@ -100,6 +100,7 @@
 #include "InitStrainMaterial.h"
 #include "Bond_SP01.h"
 #include "FRCC.h"
+#include "VRMMaterial.h"
 #include "SimpleFractureMaterial.h"
 #include "ConfinedConcrete01.h"
 
@@ -1527,6 +1528,9 @@ FEM_ObjectBrokerAllClasses::getNewUniaxialMaterial(int classTag)
         case MAT_TAG_FRCC:
 	  return new FRCC();	  
 
+        case MAT_TAG_VRM:
+	  return new VRMMaterial();	  
+	  
         case MAT_TAG_SimpleFractureMaterial:
 	  return new SimpleFractureMaterial();
 

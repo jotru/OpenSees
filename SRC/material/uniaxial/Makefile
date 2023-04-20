@@ -63,7 +63,7 @@ OBJS       = UniaxialMaterial.o \
 	FedeasMaterial.o \
 	DrainMaterial.o \
 	BoucWenOriginal.o \
-    BoucWenMaterial.o \
+	BoucWenMaterial.o \
 	SecantConcrete.o \
 	HardeningMaterial2.o \
 	Pinching4Material.o \
@@ -158,7 +158,8 @@ OBJS       = UniaxialMaterial.o \
 	HystereticAsym.o \
 	CoulombDamperMaterial.o \
 	FlagShapeMaterial.o \
-    TclModelBuilderUniaxialMaterialCommand.o
+	VRMMaterial.o \
+	TclModelBuilderUniaxialMaterialCommand.o
 
 all:         $(OBJS)
 	@$(CD) $(FE)/material/uniaxial/fedeas; $(MAKE);
